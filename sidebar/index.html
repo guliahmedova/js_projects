@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <!-- TOP -->
+        <div class="top">
+            <span class="circle green"></span>
+            <span class="circle yellow"></span>
+            <span class="circle red"></span>
+        </div>
+        <!-- TOP -->
+
+        <!-- USER -->
+        <div class="user">
+            <div class="user-info">
+                <img src="./avatar.png" class="avatar-img" alt="avatar">
+                <div class="bio">
+                    <a href="https://www.linkedin.com/in/guli-ahmedova-5b8985256/" target="_blank">Guli Ahmedova</a>
+                    <span>Frontend Developer</span>
+                </div>
+            </div>
+            <button class="menu-btn btn" id="menu-btn">
+                <img src="arrow.svg" alt="arrow">
+            </button>
+        </div>
+        <!-- USER -->
+
+        <!-- MENU LIST -->
+        <ul>
+            <li>
+                <h2 class="list-title">Home</h2>
+                <ul>
+                    <li class="link"><img src="overview.svg" alt="overview">
+                        <span>Overview</span>
+                    </li>
+                    <li class="link"><img src="scheduled.svg" alt="scheduled">
+                        <span>Scheduled</span>
+                    </li>
+                    <li class="link"><img src="email.svg" alt="e-mails">
+                        <span>E-mails</span>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h2 class="list-title">Customers</h2>
+                <ul>
+                    <li class="link"><img src="project.svg" alt="Projects">
+                        <span> Projects</span>
+                    </li>
+                    <li class="link"><img src="released.svg" alt="Released">
+                        <span>Released</span>
+                    </li>
+                    <li class="link"><img src="comments.svg" alt="Comments">
+                        <span>Comments</span>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h2 class="list-title">Media</h2>
+                <ul>
+                    <li class="link"><img src="images.svg" alt="images">
+                        <span>Images</span>
+                    </li>
+                    <li class="link"><img src="video.svg" alt="video">
+                        <span>Video</span>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h2 class="list-title">Preferences</h2>
+                <ul>
+                    <li class="link"><img src="help.svg" alt="Help Center">
+                        <span>Help Center</span>
+                    </li>
+                    <li class="link"><img src="settings.svg" alt="Settings">
+                        <span>Settings</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- MENU LIST -->
+    </div>
+
+    <script>
+        let btn = document.getElementById('menu-btn');
+        let sidebar = document.querySelector('.sidebar');
+
+        btn.onclick = function () {
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
